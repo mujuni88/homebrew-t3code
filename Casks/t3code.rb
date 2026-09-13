@@ -1,13 +1,13 @@
 cask "t3code" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.0.41-nightly.20260913.1646"
+  version "0.0.41-nightly.20260913.1658"
 
   on_arm do
-    sha256 "29f032e56fafd8e94fd092508562df1ba763c55fd735b708d9ab306c7c352305"
+    sha256 "46b120782c5ea8c29ae020baa0a3e9efce7ee5496d648c44e31ddf3f7713afbf"
   end
   on_intel do
-    sha256 "3cfc4fe52de7d358e68dd1f742ec9017896d5b3b078bdc1ac7785df37b0f2421"
+    sha256 "bd6c1d9dc8553bb5ef76daed27e4a3051f6a6a0bbf0c3edf3c327145efaae148"
   end
 
   url "https://github.com/pingdotgg/t3code/releases/download/v#{version}/T3-Code-#{version}-#{arch}.zip",
