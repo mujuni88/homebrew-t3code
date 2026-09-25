@@ -1,13 +1,13 @@
 cask "t3code" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.0.43-preview.20260925.2240"
+  version "0.0.43-nightly.20260925.2251"
 
   on_arm do
-    sha256 "486bc55fbd1f1144f25f6b4c11eafe3252e6c08b51c6ea0cb1408b5cbb6efd9f"
+    sha256 "944ae7a6e8718bfb073e6cbf0bd4f713f0d294663cd9b3f39d73e22407ba4631"
   end
   on_intel do
-    sha256 "63b42daa4138ed50a47b2ebf1b7136e5c9bb525938400a05b9130c3a84db1b2c"
+    sha256 "3381559125a06e1b68d0295dab894fae8d6b28c2bb1ed4818a36d744717c5db9"
   end
 
   url "https://github.com/pingdotgg/t3code/releases/download/v#{version}/T3-Code-#{version}-#{arch}.zip",
@@ -25,7 +25,7 @@ cask "t3code" do
   auto_updates true
   depends_on macos: ">= :ventura"
 
-  app "T3 Code (Alpha).app"
+  app "T3 Code (Nightly).app"
 
   zap trash: [
     "~/Library/Application Support/t3code",
